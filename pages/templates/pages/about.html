@@ -1,0 +1,43 @@
+<!-- pages/templates/pages/about.html -->
+{% extends '_base.html' %}
+
+{% block page_title %}About{% endblock page_title %}
+
+{% block page_h1 %}About {{ cafe_name }}{% endblock page_h1 %}
+
+{% block page_subtitle %}Serving good coffee since {{ year }}{% endblock page_subtitle %}
+
+{% block content %}
+    <h2 class="section-title">Our Story</h2>
+
+    <div class="card">
+        <p>
+            {{ cafe_name }} started as a tiny corner with one espresso machine and a big dream:
+            a calm place where people can slow down, talk, and enjoy a really good cup of coffee.
+        </p>
+    </div>
+
+    <h2 class="section-title mt-section">Quick Facts</h2>
+
+    <div class="grid">
+        <div class="card">
+            <div class="icon">📅</div>
+            <h3>Since {{ year }}</h3>
+            <p>Years of fresh coffee and happy guests.</p>
+        </div>
+        <div class="card">
+            <div class="icon">👩‍🍳</div>
+            <h3>{{ team_size }} Baristas</h3>
+            <p>A small team that knows every regular by name.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📍</div>
+            <h3>Find Us</h3>
+            <p>{{ address }}</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <a class="btn" href="{% url 'pages:home' %}">Back to Home</a>
+    </div>
+{% endblock content %}
