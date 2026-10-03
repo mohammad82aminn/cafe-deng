@@ -1,0 +1,32 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+
+{% block page_h1 %}{{ cafe_name }}{% endblock page_h1 %}
+
+{% block page_subtitle %}{{ slogan }}{% endblock page_subtitle %}
+
+{% block content %}
+    <h2 class="section-title">Why Cafe Deng?</h2>
+
+    <div class="grid">
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>Fresh Beans</h3>
+            <p>We roast our coffee beans every week, right here in our cafe.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🛋️</div>
+            <h3>Cozy Corner</h3>
+            <p>Soft lights, warm music, and comfy seats for long conversations.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📶</div>
+            <h3>Free Wi-Fi</h3>
+            <p>Bring your laptop and stay as long as you like.</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <p><strong>Opening hours:</strong> {{ opening_hours }}</p>
+    </div>
+{% endblock content %}
