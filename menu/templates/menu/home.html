@@ -1,0 +1,25 @@
+<!-- menu/templates/menu/home.html -->
+{% extends '_base.html' %}
+
+{% block page_title %}Menu{% endblock page_title %}
+
+{% block page_h1 %}Our Menu{% endblock page_h1 %}
+
+{% block page_subtitle %}Something warm, something sweet{% endblock page_subtitle %}
+
+{% block content %}
+    <h2 class="section-title">Choose a Category</h2>
+
+    <div class="grid">
+        <a class="card" href="{% url 'menu:drinks' %}">
+            <div class="icon">☕</div>
+            <h3>Drinks</h3>
+            <p>Espresso, latte, tea, and fresh cold drinks.</p>
+        </a>
+        <a class="card" href="{% url 'menu:desserts' %}">
+            <div class="icon">🍰</div>
+            <h3>Desserts</h3>
+            <p>Cakes, cookies, and sweet treats baked every day.</p>
+        </a>
+    </div>
+{% endblock content %}

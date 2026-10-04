@@ -153,6 +153,18 @@
             margin-bottom: 12px;
         }
 
+        .highlight {
+            max-width: 420px;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--latte);
+        }
+
         .info {
             text-align: center;
             margin-top: 40px;
@@ -188,6 +200,7 @@
             <a class="logo" href="{% url 'pages:home' %}">☕ Cafe Deng</a>
             <nav class="nav">
                 <a href="{% url 'pages:home' %}">Home</a>
+                <a href="{% url 'menu:home' %}">Menu</a>
                 <a href="{% url 'pages:about' %}">About</a>
             </nav>
         </div>

@@ -1,0 +1,22 @@
+<!-- menu/templates/menu/category.html -->
+{% extends '_base.html' %}
+
+{% block page_title %}{{ category }}{% endblock page_title %}
+
+{% block page_h1 %}{{ icon }} {{ category }}{% endblock page_h1 %}
+
+{% block page_subtitle %}{{ description }}{% endblock page_subtitle %}
+
+{% block content %}
+    <h2 class="section-title">Best Seller</h2>
+
+    <div class="card highlight">
+        <div class="icon">⭐</div>
+        <h3>{{ best_seller }}</h3>
+        <p class="price">{{ price }} Toman</p>
+    </div>
+
+    <div class="info">
+        <a class="btn" href="{% url 'menu:home' %}">Back to Menu</a>
+    </div>
+{% endblock content %}
