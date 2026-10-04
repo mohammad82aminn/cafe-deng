@@ -20,6 +20,7 @@ template inheritance, context, and named URLs with namespaces.
 
 - Python 3.12+
 - Django 6.1
+- environs (environment variables)
 
 ## Project Structure
 
@@ -34,11 +35,23 @@ cafe_deng/
 ## Run Locally
 
 ```bash
-git clone https://github.com/mohammad82aminn/cafe-deng.git
+git clone https://github.com/YOUR-USERNAME/cafe-deng.git
 cd cafe-deng
 python -m venv venv
 source venv/Scripts/activate   # Windows (Git Bash)
 pip install -r requirements.txt
+```
+
+Create your environment file from the example and set a new secret key:
+
+```bash
+cp .env.example .env
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+Put the generated key in `.env` as `DJANGO_SECRET_KEY`, then:
+
+```bash
 python manage.py migrate
 python manage.py runserver
 ```
