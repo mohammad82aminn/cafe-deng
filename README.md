@@ -21,6 +21,7 @@ template inheritance, context, and named URLs with namespaces.
 - Python 3.12+
 - Django 6.1
 - environs (environment variables)
+- WhiteNoise (static files)
 
 ## Project Structure
 
