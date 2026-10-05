@@ -13,3 +13,6 @@ __pycache__/
 
 # متغیرهای محیطی و رمزها (قسمت ۷)
 .env
+
+# فایل‌های Static جمع‌آوری‌شده (با collectstatic ساخته می‌شن)
+staticfiles/

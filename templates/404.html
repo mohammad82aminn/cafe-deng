@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block page_title %}Page Not Found{% endblock page_title %}
+
+{% block page_h1 %}404{% endblock page_h1 %}
+
+{% block page_subtitle %}Oops! This page is not on our menu.{% endblock page_subtitle %}
+
+{% block content %}
+    <div class="info">
+        <a class="btn" href="{% url 'pages:home' %}">Back to Home</a>
+    </div>
+{% endblock content %}
